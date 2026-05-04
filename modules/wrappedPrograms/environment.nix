@@ -62,9 +62,10 @@
         pkgs.mpv-unwrapped
         pkgs.rofi
         pkgs.jq
+        pkgs.toybox
+        pkgs.neovim
 
         # wrapped
-        pkgs.neovim
         self'.packages.qalc
         self'.packages.lf
         self'.packages.git

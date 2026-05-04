@@ -72,6 +72,7 @@ in {
             "Print".spawn-sh = "$HOME/dev-env/scripts/region_ss";
             "Ctrl+Print".spawn-sh = "$HOME/dev-env/scripts/niri_ss";
             "Mod+T".spawn = "ghostty";
+            "Mod+a".spawn = "manhunt";
 
             "Mod+B".spawn = "firefox";
 

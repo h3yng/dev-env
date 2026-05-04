@@ -111,10 +111,14 @@
       kicad
       kdePackages.kdeconnect-kde
       terraform
+      gitkraken
+      zathura
+      obs-studio
+      kdePackages.kdenlive
+      act
 
       #:)
       osu-lazer
-
 
       # GPU monitoring
       pkgs.nvitop
@@ -158,8 +162,8 @@
       pkgs.qmk-udev-rules
       pkgs.via
     ];
-    networking.firewall.allowedTCPPorts = [ 1714 1764 ];
-    networking.firewall.allowedUDPPorts = [ 1714 1764 ];
+    networking.firewall.allowedTCPPorts = [1714 1764];
+    networking.firewall.allowedUDPPorts = [1714 1764];
 
     # Monitor Configuration
     preferences.monitors = {

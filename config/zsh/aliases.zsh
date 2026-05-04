@@ -9,10 +9,11 @@ if command -v colordiff &>/dev/null; then
 fi
 
 #temporary workaround
-alias vim="$HOME/.local/bin/nvim-linux-x86_64/bin/nvim"
-alias vi="$HOME/.local/bin/nvim-linux-x86_64/bin/nvim"
-alias vm="$HOME/.local/bin/nvim-linux-x86_64/bin/nvim"
-alias v="$HOME/.local/bin/nvim-linux-x86_64/bin/nvim"
+alias vim="$HOME/neovim/nvim-lts/bin/nvim"
+alias vm="$HOME/neovim/nvim-lts/bin/nvim"
+alias v="$HOME/neovim/nvim-lts/bin/nvim"
+alias nvim="$HOME/neovim/nvim-lts/bin/nvim"
+
 
 alias ls='ls --color=auto'
 alias ll='ls -lh'
@@ -37,9 +38,6 @@ alias or="cd ~/SecondBrain/ && vim inbox/*.md"
 
 # vim profiles 
 alias vtest='NVIM_APPNAME=new-vim nvim'
-nvim() {
-    command nvim "$@"
-}
 
 alias tsn="ts-node"
 

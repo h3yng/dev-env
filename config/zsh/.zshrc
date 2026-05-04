@@ -1,6 +1,7 @@
 if [[ $- == *i* ]] && (( ${+commands[fzf]} )); then
   source <(fzf --zsh)
 fi
+export PATH="$HOME/neovim/:$PATH"
 ZSH_PLUGINS_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/zsh/plugins"
 DISABLE_BELL=true
 setopt prompt_subst
@@ -84,7 +85,7 @@ nix_shell_indicator() {
 }
 
 # custom prompt: dir  branch [nix] ❯
-PROMPT='%F{blue}%1~%f$(git_branch)$(nix_shell_indicator) %F{magenta}❯%f '
+PROMPT='%F{blue}%1~%f$(git_branch)$(nix_shell_indicator) %F{magenta}❯❯%f '
 
 [[ -f "${ZDOTDIR:-$HOME/.config/zsh}/aliases.zsh" ]] && source "${ZDOTDIR:-$HOME/.config/zsh}/aliases.zsh"
 
