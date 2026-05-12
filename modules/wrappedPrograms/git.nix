@@ -2,7 +2,7 @@
   perSystem = {pkgs, ...}: let
     gitconfig = pkgs.writeText "gitconfig" ''
       [user]
-        email = h3yng@users.noreply.github.com
+        email = thestraybyte@gmail.com
         name = h3yng
         signingkey = /home/bash/.ssh/id_ed25519.pub
       [init]
@@ -32,9 +32,9 @@
       env = {
         GIT_CONFIG_GLOBAL = gitconfig;
         GIT_AUTHOR_NAME = "h3yng";
-        GIT_AUTHOR_EMAIL = "h3yng@users.noreply.github.com";
+        GIT_AUTHOR_EMAIL = "thestraybyte@gmail.com";
         GIT_COMMITTER_NAME = "h3yng";
-        GIT_COMMITTER_EMAIL = "h3yng@users.noreply.github.com";
+        GIT_COMMITTER_EMAIL = "thestraybyte@gmail.com";
       };
     };
   };
