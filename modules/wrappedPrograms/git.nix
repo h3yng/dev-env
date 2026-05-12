@@ -2,8 +2,8 @@
   perSystem = {pkgs, ...}: let
     gitconfig = pkgs.writeText "gitconfig" ''
       [user]
-        email = bashnko@users.noreply.github.com
-        name = bashNeko
+        email = h3yng@users.noreply.github.com
+        name = h3yng
         signingkey = /home/bash/.ssh/id_ed25519.pub
       [init]
         defaultBranch = main
@@ -31,10 +31,10 @@
       runtimeInputs = [pkgs.gh];
       env = {
         GIT_CONFIG_GLOBAL = gitconfig;
-        GIT_AUTHOR_NAME = "bashNeko";
-        GIT_AUTHOR_EMAIL = "bashnko@users.noreply.github.com";
-        GIT_COMMITTER_NAME = "bashNeko";
-        GIT_COMMITTER_EMAIL = "bashnko@users.noreply.github.com";
+        GIT_AUTHOR_NAME = "h3yng";
+        GIT_AUTHOR_EMAIL = "h3yng@users.noreply.github.com";
+        GIT_COMMITTER_NAME = "h3yng";
+        GIT_COMMITTER_EMAIL = "h3yng@users.noreply.github.com";
       };
     };
   };
